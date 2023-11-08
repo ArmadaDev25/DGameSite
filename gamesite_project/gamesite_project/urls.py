@@ -18,6 +18,6 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('api/', include('GS_Backend.urls')),
+    #path('api/', include('GS_Backend.urls')),
     path('admin/', admin.site.urls),
 ]
