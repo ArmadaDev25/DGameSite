@@ -1,0 +1,1 @@
+web: gunicorn --pythonpath gamesite_project gamesite_project.wsgi
