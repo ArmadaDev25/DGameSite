@@ -6,8 +6,10 @@ from .models import LeaderboardEntry
 # Create your views here.
 
 # Backend Api Views
-class LBEntryView(viewsets.ModelViewSet):
+# Admin API
+class LBEntryViewSet(viewsets.ModelViewSet):
     serializer_class = LBEntrySerializer
     queryset = LeaderboardEntry.objects.all()
+    permission_classes = [permissions.IsAuthenticated]
 
 
