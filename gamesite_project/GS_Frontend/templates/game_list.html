@@ -1,0 +1,12 @@
+{%extends 'base.html'%}
+
+{% block content%}
+{% load static %}
+<h1> Games </h1>
+{% for game in game_list %}
+    <h1>{{game.gamename}}</h1>
+
+{% endfor %}
+
+{% endblock%}
+
