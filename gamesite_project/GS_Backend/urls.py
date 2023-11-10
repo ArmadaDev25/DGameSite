@@ -1,5 +1,6 @@
 from django.urls import include, path
 from rest_framework import routers
+from GS_Backend import views
 
 router = routers.DefaultRouter()
 router.register(r'leaderboard', views.LBEntryViewSet)
