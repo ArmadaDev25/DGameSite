@@ -4,7 +4,15 @@
 {% load static %}
 <h1> Games </h1>
 {% for game in game_list %}
-    <h1>{{game.name}}</h1>
+    <div class="card">
+        <header class="card-header">
+            {{game.name}}
+        </header>
+    </div>
+    
+
+
+    
 
 {% endfor %}
 
