@@ -5,8 +5,19 @@
 
 <div class="card">
     <header class="card-header">
-        {{game.name}}
+        <p class="title">{{game.name}}</p>
     </header>
+    <div class="card-content">
+        <div class="tabs">
+            <ul>
+                <li class="is-active"><a href="{% url 'game_detail' game.id%}">Game Details</a></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="content">
+            
+        </div>
+    </div>
 </div>
 
 {% endblock %}

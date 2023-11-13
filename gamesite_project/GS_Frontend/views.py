@@ -15,6 +15,8 @@ class GameList(ListView):
 
 class GameDetail(DetailView):
     model = Game
+
+
     
     
    

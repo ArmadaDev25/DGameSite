@@ -2,5 +2,20 @@
 
 {% block content %}
 {% load static %}
+<div class="card">
+    <header class="card-header">
+        <p class="title">{{game.name}} </p>
+    </header>
+    <div class="card-content">
+        <div class="content">
+            <div class="tabs">
+                <ul>
+                    <li><a href="{% url 'game_detail' game.id%}"></a>Home</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+</div>
 
 {% endblock %}
