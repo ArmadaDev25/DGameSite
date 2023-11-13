@@ -10,7 +10,9 @@
 
 {% for game in game_list %}
     <div class="column is-one-fifth">
-    <div class="card">
+        
+        <div class="card">
+        <a href="{% url 'game_detail' game.id%}">
         <header class="card-header">
             {{game.name}}
         </header>
@@ -19,6 +21,14 @@
                 {{game.shrt_des}}
             </div>
         </div>
+        </a>
+        <footer class="card-footer">
+            <a href="#" class="card-footer-item">Play Game</a>
+            <a href="{% url 'game_detail' game.id%}" class="card-footer-item">Details</a>
+
+
+        </footer>
+        
     </div>
     </div>
 {% endfor %}
