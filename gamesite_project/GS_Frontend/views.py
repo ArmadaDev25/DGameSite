@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.views.generic import ListView
+from django.views.generic import ListView, DetailView
 from GS_Backend.models import Game
 
 # Create your views here.
@@ -11,6 +11,9 @@ def about(request):
     return render(request, 'about.html')
 
 class GameList(ListView):
+    model = Game
+
+class GameDetail(DetailView):
     model = Game
     
     

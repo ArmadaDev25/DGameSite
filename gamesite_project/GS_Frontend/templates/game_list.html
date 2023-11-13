@@ -2,18 +2,25 @@
 
 {% block content%}
 {% load static %}
-<h1> Games </h1>
+<div class="card">
+    <header class="card-content">
+        Games
+    </header>
+</div>
+
 {% for game in game_list %}
+    <div class="column is-one-fifth">
     <div class="card">
         <header class="card-header">
             {{game.name}}
         </header>
+        <div class="card-content">
+            <div class="content">
+                {{game.shrt_des}}
+            </div>
+        </div>
     </div>
-    
-
-
-    
-
+    </div>
 {% endfor %}
 
 {% endblock%}
