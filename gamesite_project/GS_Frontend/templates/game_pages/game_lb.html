@@ -7,12 +7,14 @@
         <p class="title">{{game.name}} </p>
     </header>
     <div class="card-content">
+        <div class="tabs">
+            <ul>
+                <li><a href="{% url 'game_detail' game.id%}">Game Details</a></li>
+                <li class="is-active"><a href="{% url 'game_lb' game.id %}">Leaderboard</a></li>
+            </ul>
+        </div>
         <div class="content">
-            <div class="tabs">
-                <ul>
-                    <li><a href="{% url 'game_detail' game.id%}"></a>Home</li>
-                </ul>
-            </div>
+            
         </div>
     </div>
     

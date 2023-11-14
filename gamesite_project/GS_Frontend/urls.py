@@ -9,5 +9,5 @@ urlpatterns = [
     
     
     #Built in site Features for games
-    path('games/<int:pk>/lb/', views.GameDetail.as_view(template_name="game_pages/game_lb.html"), name='game_lb')
+    path('games/<int:pk>/lb/', views.GameDetail.as_view(template_name="game_pages/game_lb.html"), name='game_lb') #Online Leaderboard Feature Path
 ]
