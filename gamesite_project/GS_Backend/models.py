@@ -23,7 +23,7 @@ class LeaderboardEntry(models.Model):
     score = models.IntegerField()
 
     # Leaderboard entries need to be attached to a specific game
-    game = models.ForeignKey(Game, on_delete=models.CASCADE, default=1)
+    game = models.ForeignKey(Game, on_delete=models.CASCADE, default=1, related_name="entry")
 
     def __str__(self):
         return self.name
