@@ -5,7 +5,13 @@ from GS_Backend.models import Game
 # Create your views here.
 
 def home(request):
-    return render(request, 'home.html')
+    games = Game.objects.all()
+    print(games)
+    return render(request, 'home.html', {
+        'game' : games,
+        
+    })
+    
 
 def about(request):
     return render(request, 'about.html')

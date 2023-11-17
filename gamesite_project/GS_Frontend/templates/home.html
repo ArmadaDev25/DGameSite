@@ -8,6 +8,15 @@
     <header class="card-header">
         Featured Games
     </header>
+    <div class="card-content">
+        <div class="content">
+            {% for game in game.all %}
+                <p>{{game.name}}</p>
+
+            {% endfor %}
+        </div>
+    </div>
+
 </div>
 
 {% endblock %}

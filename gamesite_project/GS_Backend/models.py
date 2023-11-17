@@ -10,6 +10,9 @@ class Game(models.Model):
     genre = models.CharField(max_length=20, default=None)
     gameurl = models.CharField(max_length=50, default=None)
 
+    # Bools for determining if the game listing will be displayed in other places around the site
+    
+
 
 
     def __str__(self):
