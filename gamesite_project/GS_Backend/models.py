@@ -18,6 +18,17 @@ class Game(models.Model):
     def get_absolute_url(self):
         return reverse('game_detail', kwargs={'pk':self.id})
 
+
+# Model that will attach to each game that determines the various tags
+class GameTags(models.Model):
+    tagname = models.CharField(max_length=25)
+
+    # Tags list will be attached to a specific game
+    game = models.ForeignKey(Game, on_delete=models.CASCADE, default=None, related_name="devtags")
+    def __str__(self):
+        return self.name
+
+
 class LeaderboardEntry(models.Model):
     name = models.CharField(max_length=120)
     score = models.IntegerField()
