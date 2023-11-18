@@ -11,7 +11,10 @@
     <div class="card-content">
         <div class="content">
             {% for game in game.all %}
-                <p>{{game.name}}</p>
+                {%if game.is_featured == True%}
+                    <p>{{game.name}}</p>
+                {% else %}
+                {% endif %}
 
             {% endfor %}
         </div>
