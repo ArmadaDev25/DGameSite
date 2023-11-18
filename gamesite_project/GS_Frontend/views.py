@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.views.generic.edit import CreateView
 from django.views.generic import ListView, DetailView
 from GS_Backend.models import Game
 
@@ -21,6 +22,10 @@ class GameList(ListView):
 
 class GameDetail(DetailView):
     model = Game
+
+class GlistingCreate(CreateView):
+    model = Game
+    fields = {'name', 'developer', 'shrt_des', 'long_des', 'genre', 'gameurl'}
     
 
 
