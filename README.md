@@ -15,3 +15,13 @@ https://online-game-site-3eb2ce2f7928.herokuapp.com
 <img width="1512" alt="Screenshot 2023-11-18 at 8 31 58 AM" src="https://github.com/ArmadaDev25/DGameSite/assets/119649188/46afa40d-db4a-4412-b2e4-623b6ade3c1d">
 <img width="1512" alt="Screenshot 2023-11-18 at 9 02 17 AM" src="https://github.com/ArmadaDev25/DGameSite/assets/119649188/623889b0-fec8-42e0-9568-7bd9d209fe3e">
 <img width="1512" alt="Screenshot 2023-11-18 at 9 02 27 AM" src="https://github.com/ArmadaDev25/DGameSite/assets/119649188/e871d71d-e639-41fc-a70b-bcabd0671dff">
+<img width="1512" alt="Screenshot 2023-11-18 at 9 05 55 AM" src="https://github.com/ArmadaDev25/DGameSite/assets/119649188/a2ebc5fb-11c1-4552-9650-67e90337b753">
+<img width="1512" alt="Screenshot 2023-11-18 at 9 06 09 AM" src="https://github.com/ArmadaDev25/DGameSite/assets/119649188/b1c869f0-e968-4f24-9292-227653d94e12">
+
+## Technology Used
+- Django
+- Django REST Framework
+- Postgresql
+- Python
+- Bulma
+
