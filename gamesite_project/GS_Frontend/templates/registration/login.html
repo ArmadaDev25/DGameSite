@@ -1,0 +1,22 @@
+{% extends 'base.html'%}
+
+{% block content %}
+{% load static %}
+<div class="card">
+    <div class="card-content">
+        <p class="title is-4"> Log In </p>
+
+        <form method="POST" action="">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="hidden" name="next" value="{{ next }}">
+            <input type="submit" class="btn" value="Log In"/>
+        </form>
+
+    </div>
+
+</div>
+
+
+
+{% endblock %}

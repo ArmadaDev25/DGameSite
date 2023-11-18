@@ -21,4 +21,5 @@ urlpatterns = [
     path('api/', include('GS_Backend.urls')),
     path('', include('GS_Frontend.urls')),
     path('admin/', admin.site.urls),
+    path('accounts/', include('django.contrib.auth.urls'))
 ]
