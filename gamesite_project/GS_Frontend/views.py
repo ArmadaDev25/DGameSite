@@ -26,6 +26,10 @@ class GameDetail(DetailView):
 class GlistingCreate(CreateView):
     model = Game
     fields = {'name', 'developer', 'shrt_des', 'long_des', 'genre', 'gameurl'}
+
+    def form_valid(self, form):
+        form.instance.user = self.request.user
+        return super().form_valid(form)
     
 
 

@@ -130,4 +130,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 import django_heroku
 django_heroku.settings(locals())
 
-LOGIN_REDIRECT_URL = '/' # Redirects a Sucessful Login to the Homepage
+LOGIN_REDIRECT_URL = '/' # Redirects a Sucessful Login to the z
+LOGOUT_REDIRECT_URL = '/'
