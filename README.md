@@ -25,3 +25,12 @@ https://online-game-site-3eb2ce2f7928.herokuapp.com
 - Python
 - Bulma
 
+## Features
+- Ability to push data from other apps using a GameNet's REST API
+- Create a user account and store data connected to that user
+- Game Developers can register their game on the site by creating an account and creating a listing for their game
+- View the various games listed on the website as well as viewing details about the game
+- Game listings appear as cards with clickable buttons that can take a user to a URL where they can play the game, or the details page on the game
+- Homepage displays a list of of featured games curated from all of the game listings
+
+
