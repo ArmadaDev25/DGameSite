@@ -5,6 +5,9 @@ https://online-game-site-3eb2ce2f7928.herokuapp.com
 ## Quickstart
 - When cloning down the repo type pip3 install -r requirements.txt
 
+## Description
+DGamesite is a website with allows users to browse various games listed by developers. Games developers are able to do this by simply creating an account and registering their game on the website. This will then create a game listing which can be viewed on the /games page of the website. An account is only required in order to register a game. Viewing games and the various details and pages associated with them, including the leaderboard and game details, can be done by users whether or not they are signed into an account. 
+
 ## Screenshoots
 
 <img width="1512" alt="Screenshot 2023-11-18 at 8 20 58 AM" src="https://github.com/ArmadaDev25/DGameSite/assets/119649188/bd54beb8-7a21-401b-816e-086aad0d09fd">
