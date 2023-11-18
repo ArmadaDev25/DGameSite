@@ -3,7 +3,7 @@
 https://online-game-site-3eb2ce2f7928.herokuapp.com
 
 ## Hosted Example Game Live Link
-This was the small browser based game build to act as an example for the website to show functionality
+This was the small browser based game build to act as an example for the website to show functionality. <br>
 https://studio9.itch.io/derp-game
 
 ## Quickstart
