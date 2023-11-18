@@ -26,7 +26,7 @@ https://online-game-site-3eb2ce2f7928.herokuapp.com
 - Bulma
 
 ## Features
-- Ability to push data from other apps using a GameNet's REST API
+- Ability update game leaderboard data using a GameNet's REST API
 - Create a user account and store data connected to that user
 - Game Developers can register their game on the site by creating an account and creating a listing for their game
 - View the various games listed on the website as well as viewing details about the game
