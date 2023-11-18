@@ -4,15 +4,32 @@
 {% block content %}
 {%load static%}
 
-<div class="card">
+<div class="card m-2">
     <header class="card-header">
-        Featured Games
+        <p class="title is-4 m-4">Featured Games</p>
     </header>
     <div class="card-content">
         <div class="content">
             {% for game in game.all %}
                 {%if game.is_featured == True%}
-                    <p>{{game.name}}</p>
+                <div class="column is-one-fifth">
+                    <div class="card">
+                        <a href="{% url 'game_detail' game.id%}">
+                        <header class="card-header">
+                            <p class="card-header-title">{{game.name}}</p>
+                        </header>
+                        <div class="card-content">
+                            <div class="content">
+                                {{game.shrt_des}}
+                            </div>
+                        </div>
+                        </a>
+                        <footer class="card-footer">
+                            <a href="{{game.gameurl}}" class="card-footer-item">Play Game</a>
+                            <a href="{% url 'game_detail' game.id%}" class="card-footer-item">Details</a>
+                        </footer>
+                    </div>
+                </div>
                 {% else %}
                 {% endif %}
 
