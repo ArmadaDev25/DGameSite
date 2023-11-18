@@ -25,6 +25,10 @@ DGamesite is a website with allows users to browse various games listed by devel
 <img width="1512" alt="Screenshot 2023-11-18 at 9 05 55 AM" src="https://github.com/ArmadaDev25/DGameSite/assets/119649188/a2ebc5fb-11c1-4552-9650-67e90337b753">
 <img width="1512" alt="Screenshot 2023-11-18 at 9 06 09 AM" src="https://github.com/ArmadaDev25/DGameSite/assets/119649188/b1c869f0-e968-4f24-9292-227653d94e12">
 
+## ERD
+
+<img width="551" alt="Screenshot 2023-11-18 at 11 53 26 AM" src="https://github.com/ArmadaDev25/DGameSite/assets/119649188/9a9165a8-3687-4c56-bd3a-c2e6edc3d1f5">
+
 ## Technology Used
 - Django
 - Django REST Framework
@@ -40,4 +44,12 @@ DGamesite is a website with allows users to browse various games listed by devel
 - Game listings appear as cards with clickable buttons that can take a user to a URL where they can play the game, or the details page on the game
 - Homepage displays a list of of featured games curated from all of the game listings
 
+## Future Additions
+- Ability for users to leave comments on games.
+- The ability to upload games directly to the website.
+- Additional account features, giving the user the ability to update, view, and delete account info.
+- Ability for developers to update and change their listing.
+- A working demo showing an app pushing data to the website via the API.
+- Ability to upload photos to be used as profile pictures as well as screenshoots.
+- Additional functionality to allow developers greater customization of their game listing and game details page. 
 
