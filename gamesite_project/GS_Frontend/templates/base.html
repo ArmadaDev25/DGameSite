@@ -29,6 +29,7 @@
             
             <div class="navbar-end">
                 {% if user.is_authenticated %}
+                    <p class="navbar-item">Hello, {{user.username}}</p>
                     <a class="navbar-item" href="{%url 'game_form' %}">
                         Create Game
                     </a>
