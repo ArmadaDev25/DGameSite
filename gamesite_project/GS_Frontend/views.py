@@ -6,6 +6,9 @@ from GS_Backend.models import Game
 # User Login/Registration Imports
 from django.contrib.auth import login
 from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.decorators import login_required
+
+from django.utils.decorators import method_decorator
 
 
 # Create your views here.
@@ -28,6 +31,7 @@ class GameList(ListView):
 class GameDetail(DetailView):
     model = Game
 
+@method_decorator(login_required, name="dispatch")
 class GlistingCreate(CreateView):
     model = Game
     fields = {'name', 'developer', 'shrt_des', 'long_des', 'genre', 'gameurl'}
