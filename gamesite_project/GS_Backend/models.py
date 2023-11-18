@@ -1,6 +1,9 @@
 from django.db import models
 from django.urls import reverse
 
+# Import the User
+from django.contrib.auth.models import User
+
 # Create your models here.
 class Game(models.Model):
     name = models.CharField(max_length=120)
@@ -11,7 +14,10 @@ class Game(models.Model):
     gameurl = models.CharField(max_length=50, default=None)
 
     # Bools for determining if the game listing will be displayed in other places around the site
-    
+
+    # Adds the user to the game model
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+
 
 
 
